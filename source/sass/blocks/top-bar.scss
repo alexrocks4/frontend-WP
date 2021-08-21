@@ -1,0 +1,15 @@
+.top-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: $black;
+  color: $white;
+}
+
+.top-bar__content {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: $white;
+  margin: 0 45px 0 0;
+}

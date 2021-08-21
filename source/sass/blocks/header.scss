@@ -1,0 +1,21 @@
+.header__wrapper {
+  position: relative;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 9;
+}
+
+.header__inner-wrapper {
+  display: flex;
+  align-items: center;
+  width: 1480px;
+  margin: 0 auto;
+  padding: 15px 20px;
+
+  .search {
+    flex-grow: 50;
+  }
+
+  .user {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,62 @@
+.user {
+  display: flex;
+}
+
+.user__bookmark,
+.user__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 51px;
+  height: 51px;
+  background-color: #F3F4F9;
+  border-radius: 10px;
+}
+
+.user__bookmark {
+  position: relative;
+  margin-right: 30px;
+}
+
+.user__photo {
+  margin-left: 30px;
+}
+
+.user__bookmark-img {
+  width: 16px;
+  height: 21px;
+}
+
+.user__photo-img {
+  width: 16px;
+  height: 14px;
+}
+
+.user__bookmark-indicator {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 12px;
+  width: 13px;
+  height: 13px;
+  background-color: $accent-color;
+  border-radius: 50%;
+}
+
+.user__greeting {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.user__name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.user__text {
+  margin: 0;
+  padding: 0;
+  color: $black;
+}

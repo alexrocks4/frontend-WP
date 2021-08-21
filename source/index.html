@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Ищите знания в приложении Sokrat.">
+  <title>Sokrat — Тысячи знаний внутри</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#62BACD">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Favicon End -->
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font">
+  <link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/GothamPro-Light.woff2" as="font">
+
+</head>
+
+<body>
+
+  <div style="display:none">
+    <include src="source/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="header">
+
+    <div class="top-bar">
+      <p class="top-bar__content">
+        Ищите знания<br>
+        в приложении Sokrat.
+      </p>
+
+      <a href="#" class="btn btn--pink">Скачать</a>
+    </div>
+
+    <div class="header__wrapper">
+      <div class="header__inner-wrapper">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img" width="196" height="36">
+          </a>
+        </div>
+
+        <div class="search">
+          <form class="search__form" role="search" method="get" id="search__form-header" action="#">
+            <label class="visually-hidden" for="search__input">Поиск по курсам</label>
+            <input class="search__input" id="search__input" type="text" placeholder="Поиск по курсам" value="" name="s">
+            <button class="search__submit-btn" type="submit" id="search__submit-btn">Найти</button>
+          </form>
+        </div>
+
+        <div class="user">
+          <div class="user__bookmark">
+            <img src="img/bookmark-icon.svg" alt="" class="user__bookmark-img" width="16" height="21">
+            <span class="user__bookmark-indicator"></span>
+          </div>
+          <div class="user__login">
+            <p class="user__greeting">Привет, <span class="user__name">Друг</span></p>
+            <p class="user__text">Что нового узнаем сегодня?</p>
+          </div>
+          <div class="user__photo">
+            <img src="img/camera-icon.svg" alt="" class="user__photo-img" width="16" height="14">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-nav">
+      <nav class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--active">Все курсы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Все практики</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="main-slider">
+      <div class="main-slider__wrapper">
+        <h1 class="visually-hidden">Sokrat — Тысячи знаний внутри</h1>
+
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/main-slider-placeholder.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/main-slider-placeholder-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/main-slider-placeholder.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/main-slider-placeholder-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="carousel carousel--popular">
+
+      <div class="carousel__wrapper">
+        <h2 class="carousel__title">Популярное</h2>
+
+        <ul class="carousel__list">
+          <li class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </li>
+
+          <li class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </li>
+
+          <li class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="category">
+
+      <div class="category__wrapper">
+        <h2 class="category__title">Мои категории</h2>
+        <ul class="category__list">
+          <li class="category__item">
+            <a href="#" class="category__img-link">
+              <img src="img/category-placeholder.jpg" alt="" class="category__img">
+            </a>
+            <p class="category__item-title">
+              <a href="#" class="category__title-link">Блокчейн</a>
+            </p>
+          </li>
+
+          <li class="category__item">
+            <a href="#" class="category__img-link">
+              <img src="img/category-placeholder.jpg" alt="" class="category__img">
+            </a>
+            <p class="category__item-title">
+              <a href="#" class="category__title-link">Блокчейн</a>
+            </p>
+          </li>
+
+          <li class="category__item">
+            <a href="#" class="category__img-link">
+              <img src="img/category-placeholder.jpg" alt="" class="category__img">
+            </a>
+            <p class="category__item-title">
+              <a href="#" class="category__title-link">Блокчейн</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- <section class="about">
+      <div class="about__wrapper">
+        <h2 class="about__title">О программе</h2>
+        <p class="about__desc">
+          «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60
+          на русском) и возможность стажировки в Израиле. В течение освоения программ
+          предусмотрен грант от 4200 до
+          8400$.
+        </p>
+      </div>
+      <div class="about__video-wrapper">
+        <button type="button" class="about__video-play-btn">
+
+          <svg class="about__video-btn-icon" width="96" height="96" viewBox="0 0 96 96" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white" />
+            <circle class="circle2" cx="48" cy="48" r="32" fill="white" />
+            <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC" />
+          </svg>
+          <span class="visually-hidden">Включить презентацию о программе</span>
+        </button>
+      </div>
+
+    </section>
+
+
+    <section class="live-in-israel">
+      <div class="live-in-israel__wrapper">
+        <h2 class="live-in-israel__title">Жизнь в израиле</h2>
+        <p class="live-in-israel__desc">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
+          стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
+
+        <div class="slider slider--live-list">
+          <ul class="live-in-israel__programms-list slider__list">
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--excursions slider__item">
+              <p class="live-in-israel__programms-title">Экскурсии по Израилю и знакомство с его историей</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--learning slider__item">
+              <p class="live-in-israel__programms-title">Изучение иврита</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--profession slider__item">
+              <p class="live-in-israel__programms-title">Обучение современным навыкам и профессиям</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--collaboration slider__item">
+              <p class="live-in-israel__programms-title">Совместные творческие проекты с израильской молодёжью</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--lider slider__item">
+              <p class="live-in-israel__programms-title">Развитие лидерства</p>
+            </li>
+          </ul>
+
+          <div class="slider__bullets"></div>
+        </div>
+      </div>
+
+    </section> -->
+
+
+
+  </main>
+
+  <!-- <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo">
+        <img src="img/logo-footer.png" srcset="img/logo-footer2x.png 2x" alt="Логотип Маса" class="footer__logo-img"
+          width="85" height="27">
+      </a>
+
+      <p class="footer__copyright">Copyright someDesignCompany ©2019</p>
+
+      <div class="socials socials--footer">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Фейсбук</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Твиттер</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Инсташрам</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- <div class="modals modals--callback modals--hide">
+    <div class="modals__wrapper">
+
+      <button type="button" class="modals__close-btn">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+
+      <p class="modals__title">Заказать звонок</p>
+      <p class="modals__desc">
+        Оставьте ваши контактные данные, мы свяжемся
+        с вами в течение рабочего дня и обязательно
+        поможем найти ответ на ваш вопрос!
+      </p>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="modals__form">
+        <div class="modals__fieldset">
+          <p class="modals__form-item modals__form-item--name">
+            <input class="modals__input-name" id="modals__name" type="text" name="Имя:" placeholder="Имя" required>
+            <label class="visually-hidden" for="modals__name">Имя:</label>
+          </p>
+          <p class="modals__form-item modals__form-item--phone">
+            <input class="modals__input-phone" id="modals__phone-number" type="tel" name="Номер телефона:"
+              placeholder="Телефон" required>
+            <label class="visually-hidden" for="modals__phone-number">Номер
+              телефона:</label>
+          </p>
+          <button type="submit" class="modals__btn-submit">перезвоните мне</button>
+          <p class="modals__form-item modals__form-item--checkbox">
+            <input class="modals__input-checkbox visually-hidden" type="checkbox" name="С условиями согласен"
+              id="input-checkbox">
+            <label class="modals__input-checkbox-label" for="input-checkbox">
+              Нажимая на кнопку, вы даёте согласие
+              на обработку персональных данных</label>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- <script src="js/vendor.js"></script> -->
+  <!-- <script src="js/script.js"></script> -->
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+  </script>
+</body>
+
+</html>
