@@ -1,0 +1,24 @@
+
+.container {
+
+}
+
+.container__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.container__content {
+  flex-basis: 75%;
+}
+
+.container__sidebar {
+  margin-top: 63px;
+  padding: 25px;
+  flex-basis: 25%;
+  padding-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(#000000, 0.1);
+}

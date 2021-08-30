@@ -1,0 +1,48 @@
+
+.cta {
+  margin-top: 70px;
+  background-color: $bg-light;
+  background-image: url('../../img/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: 90% bottom;
+}
+
+.cta__wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.cta__content-wrapper {
+  width: 550px;
+}
+
+.cta__title {
+  margin-bottom: 15px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.cta__text {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 29px;
+  line-height: 1.4;
+}
+
+.cta__download-btn-link {
+  text-decoration: none;
+}
+
+.cta__btn-appstore-img {
+  width: 201px;
+  height: 67px;
+}
+
+.cta__btn-gplay-img {
+  margin-left: 50px;
+  width: 224px;
+  height: 67px;
+}
