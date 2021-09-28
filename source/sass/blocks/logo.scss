@@ -1,6 +1,11 @@
 .logo__img {
   width: 157px;
   height: 36px;
+
+  @media (max-width: $mobile) {
+    width: 134px;
+    height: 30px;
+  }
 }
 
 .logo__img--footer {
@@ -12,4 +17,17 @@
   margin: 0;
   font-size: 20px;
   line-height: 1.2;
+}
+
+.logo--closed .logo__link--header {
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.logo--footer {
+  @media (max-width: $mobile) {
+    margin-bottom: 41px;
+  }
 }

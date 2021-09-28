@@ -81,9 +81,9 @@
     </div>
 
     <div class="header__wrapper">
-      <div class="header__inner-wrapper">
+      <div class="header__inner-wrapper header__inner-wrapper--closed">
         <div class="logo">
-          <a href="#" class="logo__link">
+          <a href="#" class="logo__link logo__link--header">
             <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img" width="157" height="36">
           </a>
         </div>
@@ -99,10 +99,10 @@
         <div class="user">
           <div class="user__bookmark">
             <img src="img/bookmark-icon.svg" alt="" class="user__bookmark-img" width="16" height="21">
-            <span class="user__bookmark-indicator"></span>
+            <span class="user__bookmark-indicator indicator"></span>
           </div>
           <div class="user__login">
-            <p class="user__greeting">Привет, <span class="user__name">Друг</span></p>
+            <p class="user__greeting">Привет, <span class="user__name">Друг!</span></p>
             <p class="user__text">Что нового узнаем сегодня?</p>
           </div>
           <div class="user__photo">
@@ -112,18 +112,29 @@
       </div>
     </div>
 
-    <div class="main-nav">
+    <div class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
+      </button>
       <nav class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link main-nav__link--active">Все курсы</a>
+            <a href="#" class="main-nav__link main-nav__link--mobile">Личный кабинет</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Все курсы</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">Все практики</a>
           </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--mobile">Избранное</a>
+          </li>
         </ul>
       </nav>
+      <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
     </div>
+
 
   </header>
 
@@ -136,16 +147,28 @@
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/main-slider-placeholder.jpg" alt="">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
+                <img src="img/main-slider-placeholder.jpg" alt="">
+              </picture>
             </div>
             <div class="swiper-slide">
-              <img src="img/main-slider-placeholder-2.jpg" alt="">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
+                <img src="img/main-slider-placeholder-2.jpg" alt="">
+              </picture>
             </div>
             <div class="swiper-slide">
-              <img src="img/main-slider-placeholder.jpg" alt="">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
+                <img src="img/main-slider-placeholder.jpg" alt="">
+              </picture>
             </div>
             <div class="swiper-slide">
-              <img src="img/main-slider-placeholder-2.jpg" alt="">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
+                <img src="img/main-slider-placeholder-2.jpg" alt="">
+              </picture>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -168,19 +191,10 @@
 
                 <div class="carousel__item">
                   <a href="#" class="carousel__img-link">
-                    <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
-                    <div class="carousel__item-info">
-                      <p class="carousel__item-price">700 000 ₽</p>
-                      <p class="carousel__item-duration">23 месяца</p>
-                    </div>
-                    <p class="carousel__item-title">Философия искусственного интеллекта Философия искусственного</p>
-                  </a>
-                  <a href="#" class="carousel__item-btn">Подробнее</a>
-                </div>
-
-                <div class="carousel__item">
-                  <a href="#" class="carousel__img-link">
-                    <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                      <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+                    </picture>
                     <div class="carousel__item-info">
                       <p class="carousel__item-price">700 000 ₽</p>
                       <p class="carousel__item-duration">23 месяца</p>
@@ -192,7 +206,25 @@
 
                 <div class="carousel__item">
                   <a href="#" class="carousel__img-link">
-                    <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                      <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+                    </picture>
+                    <div class="carousel__item-info">
+                      <p class="carousel__item-price">700 000 ₽</p>
+                      <p class="carousel__item-duration">23 месяца</p>
+                    </div>
+                    <p class="carousel__item-title">Философия искусственного интеллекта</p>
+                  </a>
+                  <a href="#" class="carousel__item-btn">Подробнее</a>
+                </div>
+
+                <div class="carousel__item carousel__item--last">
+                  <a href="#" class="carousel__img-link">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                      <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+                    </picture>
                     <div class="carousel__item-info">
                       <p class="carousel__item-price">700 000 ₽</p>
                       <p class="carousel__item-duration">23 месяца</p>
@@ -219,7 +251,10 @@
               <div class="category__list">
                 <div class="category__item">
                   <a href="#" class="category__img-link">
-                    <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                      <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    </picture>
                   </a>
                   <p class="category__item-title">
                     <a href="#" class="category__title-link">Блокчейн</a>
@@ -228,7 +263,10 @@
 
                 <div class="category__item">
                   <a href="#" class="category__img-link">
-                    <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                      <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    </picture>
                   </a>
                   <p class="category__item-title">
                     <a href="#" class="category__title-link">Блокчейн</a>
@@ -237,7 +275,10 @@
 
                 <div class="category__item">
                   <a href="#" class="category__img-link">
-                    <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                      <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    </picture>
                   </a>
                   <p class="category__item-title">
                     <a href="#" class="category__title-link">Блокчейн</a>
@@ -246,7 +287,10 @@
 
                 <div class="category__item">
                   <a href="#" class="category__img-link">
-                    <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                      <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    </picture>
                   </a>
                   <p class="category__item-title">
                     <a href="#" class="category__title-link">Блокчейн</a>
@@ -255,7 +299,10 @@
 
                 <div class="category__item">
                   <a href="#" class="category__img-link">
-                    <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    <picture>
+                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                      <img src="img/category-placeholder.jpg" alt="" class="category__img">
+                    </picture>
                   </a>
                   <p class="category__item-title">
                     <a href="#" class="category__title-link">Блокчейн</a>
@@ -307,13 +354,16 @@
     <section class="carousel carousel--full">
 
       <div class="carousel__wrapper">
-        <h2 class="carousel__title">Новинки</h2>
+        <h2 class="carousel__title carousel__title--hidden">Новинки</h2>
 
         <div class="carousel__list">
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -325,7 +375,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -337,7 +390,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -347,9 +403,12 @@
             <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
-          <div class="carousel__item">
+          <div class="carousel__item carousel__item--last">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -358,10 +417,11 @@
             </a>
             <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
-
-          <div class="carousel__btn-next"></div>
-          <div class="carousel__btn-prev"></div>
         </div>
+
+        <div class="carousel__btn-next"></div>
+        <div class="carousel__btn-prev"></div>
+      </div>
       </div>
     </section>
     <!-- New END-->
@@ -376,7 +436,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -388,7 +451,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -400,7 +466,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -410,9 +479,12 @@
             <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
-          <div class="carousel__item">
+          <div class="carousel__item carousel__item--last">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -440,37 +512,55 @@
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
@@ -492,7 +582,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -504,7 +597,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -516,7 +612,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -526,9 +625,12 @@
             <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
-          <div class="carousel__item">
+          <div class="carousel__item carousel__item--last">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -555,7 +657,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -567,7 +672,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -579,7 +687,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -589,9 +700,12 @@
             <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
-          <div class="carousel__item">
+          <div class="carousel__item carousel__item--last">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -620,37 +734,55 @@
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
           <div class="partners__item">
             <a href="#" class="partners__img-link">
-              <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
+              </picture>
             </a>
           </div>
 
@@ -672,7 +804,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -684,7 +819,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -696,7 +834,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -706,9 +847,12 @@
             <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
-          <div class="carousel__item">
+          <div class="carousel__item carousel__item--last">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -735,7 +879,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -747,7 +894,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -759,7 +909,10 @@
 
           <div class="carousel__item">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -769,9 +922,12 @@
             <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
-          <div class="carousel__item">
+          <div class="carousel__item carousel__item--last">
             <a href="#" class="carousel__img-link">
-              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              </picture>
               <div class="carousel__item-info">
                 <p class="carousel__item-price">700 000 ₽</p>
                 <p class="carousel__item-duration">23 месяца</p>
@@ -829,9 +985,10 @@
             <li class="socials__item">
               <span class="visually-hidden">Ссылка на инстаграм</span>
               <a href="#" class="socials__link">
-                <svg class="socials__icon socials__icon--instagram" width="31" height="31">
-                  <use xlink:href="#icon-instagram"></use>
-                </svg>
+                <picture class="socials__icon socials__icon--instagram">
+                  <source media="(max-width: 768px)" srcset="img/instagram-mobile-icon.svg" width="31" height="31">
+                  <img src="img/instagram-icon.svg" width="31" height="31" alt="Ссылка на инстаграм">
+                </picture>
               </a>
             </li>
             <li class="socials__item">
@@ -848,6 +1005,13 @@
                 <svg class="socials__icon socials__icon--vk" width="31" height="31">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <span class="visually-hidden">Ссылка на Яндекс Дзен</span>
+              <a href="#" class="socials__link">
+                <img src="img/yandex-zen-icon.svg" alt="ссылка на Яндекс Дзен"
+                  class="socials__icon socials__icon--yandex-zen" width="31" height="31">
               </a>
             </li>
           </ul>
@@ -893,7 +1057,8 @@
           </li>
         </ul>
 
-        <p class="bottom-bar__copyright">© <span class="bottom-bar__copyright-year">2021</span> Sokrat. Все права защищены</p>
+        <p class="bottom-bar__copyright">© <span class="bottom-bar__copyright-year">2021</span> Sokrat. Все права
+          защищены</p>
       </div>
     </div>
   </footer>

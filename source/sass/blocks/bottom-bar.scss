@@ -2,20 +2,37 @@
   margin-top: 50px;
   background-color: $black;
   color: #fff;
+
+  @media (max-width: $mobile) {
+    min-height: 105px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+  }
 }
 
 .bottom-bar__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1460px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 10px 0;
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
 }
 
 .bottom-bar__nav-list {
   display: flex;
 
   @include list-reset;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
 }
 
 .bottom-bar__nav-item {
@@ -41,4 +58,10 @@
 .bottom-bar__copyright {
   font-size: 13px;
   line-height: 1.2;
+
+  @media (max-width: $mobile) {
+    align-self: center;
+    justify-self: end;
+    margin-bottom: auto;
+  }
 }

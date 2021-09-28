@@ -7,7 +7,7 @@
 .header__inner-wrapper {
   display: flex;
   align-items: center;
-  width: 1480px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 15px 20px;
 
@@ -17,5 +17,22 @@
 
   .user {
     flex-grow: 1;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 73px;
+    align-items: center;
+    padding: 15px 16px;
+  }
+}
+@media (max-width: $mobile) {
+.header__inner-wrapper--closed .logo {
+  display: none;
+  }
+}
+
+@media (max-width: $mobile) {
+  .header__inner-wrapper--opened .user {
+    display: none;
   }
 }

@@ -56,3 +56,9 @@
     background-color: darken($main-color, 10);
   }
 }
+
+.search {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}

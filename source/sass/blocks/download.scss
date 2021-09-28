@@ -1,6 +1,14 @@
 
 .download {
   margin-top: 40px;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 .download__title {

@@ -1,11 +1,22 @@
 .socials {
   margin-top: 30px;
+
+  @media (max-width: $mobile) {
+    position: absolute;
+    bottom: -169px;
+    left:50%;
+    transform: translate(-50%, 0)
+  }
 }
 
 .socials__title {
   font-size: 15px;
   font-weight: bold;
   line-height: 1.2;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .socials__list {
@@ -31,5 +42,23 @@
   &:hover,
   &:focus {
     fill: $main-color;
+  }
+}
+
+.socials__icon--facebook {
+    background-color: $white;
+    border-radius: 20%;
+
+  @media (max-width: $mobile) {
+    fill: #3B5999;
+  }
+}
+
+.socials__icon--vk {
+    background-color: $white;
+    border-radius: 20%;
+
+  @media (max-width: $mobile) {
+    fill: #436EAB;
   }
 }
