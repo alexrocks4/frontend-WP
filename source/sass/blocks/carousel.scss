@@ -19,12 +19,6 @@
   }
 }
 
-.carousel__title--hidden {
-  @media (max-width: $mobile) {
-    display: none;
-  }
-}
-
 .carousel__list {
   position: relative;
   display: flex;
